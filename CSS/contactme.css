@@ -1,0 +1,97 @@
+/*Navbar css*/
+.navbar{
+  background-color: black;
+}
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    color:white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+/*Contact box*/
+h2{
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+p{
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+  input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+ul{
+  list-style-type: none;
+}
+/*Footer*/
+footer{
+  background-color: #370D32;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+.fa-brands{
+  color:white;
+  padding: 20px;
+  margin: auto;
+}
+h4{
+  color:white;
+  opacity: 20%;
+  font-size:10px;
+}
