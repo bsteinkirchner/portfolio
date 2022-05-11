@@ -18,37 +18,32 @@
     <title>Brittany Steinkirchner</title>
 </head>
 <body>
+<div class="wrapper">
 <!--- Navbar-->
-<!--- Navbar-->
-<nav class="navbar">
-    <a class="navbar-brand" href="index.html">
-      <img src="IMGS/logo.png" width="40" height="40" alt="logo">
-    </a>
-    <!-- Menu button-->
-    <ul class="menu">
-        <li><a class="menuItem" href="index.html">Home</a></li>
-        <li><a class="menuItem" href="aboutme.html">About</a></li>
-        <li><a class="menuItem" href="projects.html">Projects</a></li>
-        <li><a class="menuItem" href="contactme.html">Contact me</a></li>
-      </ul>
-      <button class="hamburger">
-        <i class="menuIcon material-icons">menu</i>
-      </button>
-</nav>
+  <!-- Menu button-->
+  <ul class="menu">
+    <li><a class="menuItem" href="index.html">Home</a></li>
+    <li><a class="menuItem" href="aboutme.html">About me</a></li>
+    <li><a class="menuItem" href="projects.html">Projects</a></li>
+    <li><a class="menuItem" href="contactme.html">Contact me</a></li>
+  </ul>
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+  </button>
 <!--Contact box-->
 <div class="container">
     <div>
         <h2>Get in touch</h2>
     </div>
     <p>Need a quote for a website or want to learn more about me? Fill out the contact box and I will reach out!</p>
-    <form action="action_page.php">
+    <form action= "https://formcarry.com/s/eZ6umjlXZya" method="post">
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
       <br>
       <input type="text" id="email" name="email" placeholder="Your email..">
       <br>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       <br>
-      <input type="submit" value="Submit">
+      <input type="submit" onclick="submitForm()" value="Submit">
     </form>
     <div class="big">
     <div class="minicontainer">
@@ -57,7 +52,7 @@
     </div>
     <div class="minicontainer2">
       <i class="fa-solid fa-mobile-screen-button"></i>
-      <h6>(206)854-4009</h6>
+      <a href="2068544009"></a><h6>(206)854-4009</h6></a>
     </div>
     <div class="minicontainer3">
       <i class="fa-solid fa-envelope"></i>
@@ -71,7 +66,10 @@
   <a href="https://www.linkedin.com/in/brittany-steinkirchner-6b0680113/"><i class="fa-brands fa-linkedin"></i></a>
   <h4>©Copyright Brittany Steinkirchner</h4>
 </footer>
+</div>
 <!--Section: Contact v.2-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
 <script src="JS/script.js"></script>
 </body>
 </html>

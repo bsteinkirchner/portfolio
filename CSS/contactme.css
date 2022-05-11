@@ -1,38 +1,74 @@
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
 /*Navbar css*/
-.navbar{
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  color:white;
+  cursor: pointer;
   background-color: black;
 }
-.hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    color:white;
-    cursor: pointer;
-    background-color: black;
-    border-radius: 10px;
-  }
-  .closeIcon {
-    display: none;
-  }
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-  }
-  .showMenu {
-    transform: translateY(0);
-  }
+.closeIcon {
+  display: none;
+}
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  width: 150px;
+  height:200px;
+  border-color: white;
+  border-style: solid;
+}
+.showMenu {
+  transform: translateY(0);
+}
 /*Contact box*/
 h2{
   text-align: center;
@@ -43,51 +79,55 @@ p{
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
 }
-  input[type=text], select, textarea {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-  }
-
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-   
-  }
-  
-  input[type=submit]:hover {
+input[type=text], select, textarea {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+input[type=submit] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .container {
+  } 
+.container {
+    align-items: center;
     border-radius: 10px;
     background-color: #f2f2f2;
-    padding: 10px;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+
   }
 .big{
   display:flex;
   justify-content: flex-end;
   align-items:center;
-  flex-direction: column;
+  flex-direction: row;
   margin-top:auto;
+  text-align:center;
+  justify-content: space-between;
 }
 /*Footer*/
 footer{
-  background-color: #370D32;
+  background-color: black;
   width: 100%;
   font-size: 30px;
   text-align: center;
+
 }
 .fa-brands{
   color:white;
